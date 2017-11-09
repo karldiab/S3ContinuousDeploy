@@ -1,0 +1,8 @@
+dependencies:
+    override:
+        - sudo pip install awscli
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync /home/ubuntu/CircleCiS3Test s3://s3awstimtimtim --delete
